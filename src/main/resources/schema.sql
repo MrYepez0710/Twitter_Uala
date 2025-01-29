@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS Follow;
+DROP TABLE IF EXISTS Account;
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    nickname VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE account(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    tweets VARCHAR(280) NOT NULL,
+    date_tweet TIMESTAMP NOT NULL
+);
+
+CREATE TABLE Follow(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    following_id INT NOT NULL,
+    following_nickname VARCHAR(50) NOT NULL,
+    state BOOLEAN NOT NULL
+);

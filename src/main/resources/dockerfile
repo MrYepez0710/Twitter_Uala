@@ -1,0 +1,11 @@
+FROM openjdk:17.0.1-jdk-slim
+
+RUN useradd admin
+
+RUN chmod 775 /
+
+COPY "TwitterUala.jar" "/opt/jars/TwitterUala.jar"
+
+EXPOSE 8000
+
+ENTRYPOINT ["java", "-jar", "/opt/jars/TwitterUala.jar"]

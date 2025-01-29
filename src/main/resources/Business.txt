@@ -1,0 +1,13 @@
+Assumptions
+
+Para disfrutar de una mejor funcionalidad en el aplicativo, se agregaron funcionalidades extras. A continuación se hará mención de los servicios extra que se agregaron:
+
+1. Find user by id: Servicio que nos permite validar la existencia de un usuario si conocemos su ID
+2. Find user by nickname: Servicio que nos permite validar la existencia de un usuario si conocemos su nickname
+3. Followers: Nos muestra la cantidad de personas que nos siguen en la app
+4. Followings: Nos muestra la cantidad de personas que estamos siguiendo
+5. Unfollow: Servicio que nos permite dejar de seguir a un usuario
+6. List users: Servicio que nos permite ver la lista de usuarios
+7. Create User: Servicio que nos permite crear un usuario nuevo.
+
+Adicional se anexa una librería de postman, donde están todos los servicios con ejemplos prácticos.

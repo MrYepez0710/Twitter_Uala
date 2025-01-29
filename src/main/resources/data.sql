@@ -1,0 +1,60 @@
+INSERT INTO users(id, first_name, last_name, nickname, email) VALUES(1, 'Juan', 'Perez', 'jo.2510', 'juan.perez@gmail.com');
+INSERT INTO users(id, first_name, last_name, nickname, email) VALUES(2, 'Carlos', 'Rios', 'carlino.rivers', 'c.rivers@gmail.com');
+INSERT INTO users(id, first_name, last_name, nickname, email) VALUES(3, 'Alberto', 'Rodriguez', 'betoguez0110', 'alro0110@gmail.com');
+INSERT INTO users(id, first_name, last_name, nickname, email) VALUES(4, 'Pedro', 'Vasquez', 'pedro.vasquez', 'pedro.vasquez@gmail.com');
+INSERT INTO users(id, first_name, last_name, nickname, email) VALUES(5, 'Jorge', 'Gonzalez', 'george.go', 'jordi.gonzo@gmail.com');
+
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (1, 1, 'Mi primer tweet del 2024', '2024-01-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (2, 1, 'Iniciando mi jornada laboral', '2024-01-10 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (3, 1, 'por acá disfrutando semana santa', '2024-03-10 10:00:51');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (4, 1, 'Que buen partido de champions he visto', '2024-05-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (5, 1, 'Hoy amaneci con ganas de natilla con buñuelos', '2024-06-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (6, 1, 'y ya se partio el año', '2024-07-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (7, 1, 'Disfrutando de mi cumpleaños', '2024-07-10 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (8, 1, 'disfrutando de la semana de receso', '2024-10-15 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (9, 1, 'Feliz Navidad', '2024-12-25 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (10, 1, 'Mi primer tweet del 2025', '2025-01-01 00:00:50');
+
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (11, 2, 'Por acá iniciando un año nuevo', '2024-01-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (12, 2, 'Iniciando nuevo semestre de universidad', '2024-02-04 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (13, 2, 'Marzo sorprendeme :D', '2024-03-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (14, 2, 'Feliz día de la madre .... mamacitas :$', '2024-05-09 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (15, 2, 'un tweet mas', '2024-06-11 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (16, 2, 'Amar sin ser amado...', '2024-07-20 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (17, 2, 'por acá con la familia', '2024-08-30 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (18, 2, 'Feliz día del amor y la amistad', '2024-09-18 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (19, 2, 'Y se acabó la U', '2024-11-10 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (20, 2, 'Tengo gripa.... Feliz día del inocente XD', '2024-12-28 00:00:50');
+
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (21, 3, 'por acá celebrando reyes ... con los reyes XD', '2024-01-06 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (22, 3, 'Y se fue ya enero', '2024-02-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (23, 3, 'Gracias a Dios por mi familia', '2024-03-10 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (24, 3, 'Feliz semana santa', '2024-04-18 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (25, 3, 'Feliz de vivir como vivo', '2024-05-29 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (26, 3, 'Jugando fifita ', '2024-06-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (27, 3, 'Por acá en cancun', '2024-07-20 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (28, 3, 'y si, un año más viejo', '2024-08-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (29, 3, 'Compartiendo con amigos', '2024-09-19 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (30, 3, 'Feliz día de los niños', '2024-10-31 00:00:50');
+
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (31, 4, 'Iniciando año nuevo con Dios y mi familia', '2024-01-01 00:01:10');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (32, 4, 'Y la nueva expa de wow para cuando?', '2024-03-10 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (33, 4, 'viendo futbolito', '2024-04-25 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (34, 4, 'y si...', '2024-05-16 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (35, 4, 'Feliz día de la independencia', '2024-07-20 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (36, 4, 'Celebrando la batalla de boyaca', '2024-08-07 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (37, 4, 'Septiembre... por que no tienes festivos?', '2024-09-19 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (38, 4, 'Octubre me encanta', '2024-10-09 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (39, 4, 'Hoy 11 del 11', '2024-11-11 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (40, 4, 'Celebrando navidad con mi familia', '2024-12-01 00:00:50');
+
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (41, 5, 'Hoy inicia la F1 ', '2024-03-15 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (42, 5, 'Seguimos viendo F1', '2024-04-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (43, 5, 'Hamilton para Ferrari? WOW', '2024-05-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (44, 5, 'Ya casi entramos a vacaciones', '2024-06-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (45, 5, 'Amo el GP de Silverstone', '2024-07-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (46, 5, 'Spa francorchamps es una obra de arte', '2024-08-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (47, 5, 'Acá también hay espacio para el futbol', '2024-09-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (48, 5, 'Queremos ver a Norris ganando', '2024-10-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (49, 5, 'Vamos Norris!', '2024-11-01 00:00:50');
+INSERT INTO account (id, user_id, tweets, date_tweet)VALUES (50, 5, 'Quería que ferrari ganara, pero al menos no fue redbull', '2024-12-01 00:00:50');
