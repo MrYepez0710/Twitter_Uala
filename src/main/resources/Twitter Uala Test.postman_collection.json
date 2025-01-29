@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "71840f86-364e-47d4-acdc-bbfb498a48d5",
+		"name": "Twitter Uala Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10807145"
+	},
+	"item": [
+		{
+			"name": "FindById",
+			"item": [
+				{
+					"name": "Find user by Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/user/byId",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"byId"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FindByNickname",
+			"item": [
+				{
+					"name": "Find user by nickname",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "nickname",
+								"value": "betoguez0110",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/user/byNickname",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"byNickname"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Follows",
+			"item": [
+				{
+					"name": "Followers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/account/followers",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"account",
+								"followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Following",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/account/following",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"account",
+								"following"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Follow",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "nickname",
+								"value": "george.go",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/account/follow",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"account",
+								"follow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollow",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "id",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "nickname",
+								"value": "george.go",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/account/unfollow",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"account",
+								"unfollow"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Timeline",
+			"item": [
+				{
+					"name": "Home",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "userId",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://165.22.91.188:8000/account/home",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"account",
+								"home"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tweets",
+			"item": [
+				{
+					"name": "MakeTweet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":0,\r\n    \"tweets\":\"Mi primer tweet\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.22.91.188:8000/account/makeTweet",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"account",
+								"makeTweet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "List users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://165.22.91.188:8000/user/",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "version",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://165.22.91.188:8000/version/",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"version",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"Leidy\",\r\n    \"lastName\":\"Diaz\",\r\n    \"email\":\"lngd.2904@gmail.com\",\r\n    \"nickname\":\"lngd.2904\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://165.22.91.188:8000/user/",
+							"protocol": "http",
+							"host": [
+								"165",
+								"22",
+								"91",
+								"188"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
