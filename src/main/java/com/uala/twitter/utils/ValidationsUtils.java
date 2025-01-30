@@ -49,7 +49,7 @@ public class ValidationsUtils {
             response.setState(false);
             return response;
         }
-        if (tweetInfo.getUserId() == null || tweetInfo.getId() == 0) {
+        if (tweetInfo.getUserId() == null || tweetInfo.getUserId() == 0) {
             response.setMessage("User id is null");
             response.setState(false);
         }
